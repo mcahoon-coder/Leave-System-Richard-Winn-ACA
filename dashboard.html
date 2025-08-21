@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Dashboard</h2>
+  <nav>
+    <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    <a href="{{ url_for('request_leave') }}">Request Leave</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+  </nav>
+  <h3>Recent Requests</h3>
+  <table>
+    <tr><th>Start</th><th>End</th><th>Hours</th><th>Status</th></tr>
+    {% for r in my_requests %}
+      <tr><td>{{ r.start_date }}</td><td>{{ r.end_date }}</td><td>{{ r.hours_requested }}</td><td>{{ r.status }}</td></tr>
+    {% else %}
+      <tr><td colspan="4">No requests yet.</td></tr>
+    {% endfor %}
+  </table>
+{% endblock %}

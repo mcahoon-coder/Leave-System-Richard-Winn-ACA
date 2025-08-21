@@ -1,0 +1,11 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#f6f7fb;margin:0}
+.container{max-width:900px;margin:40px auto;background:#fff;padding:24px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.07)}
+h1{margin-top:0}nav a{margin-right:12px;text-decoration:none;color:#2563eb}
+label{display:block;margin-top:10px}input,select{width:100%;padding:8px;margin-top:4px}
+button{margin-top:14px;padding:10px 16px;border:none;background:#3b82f6;color:#fff;border-radius:8px;cursor:pointer}
+table{width:100%;border-collapse:collapse;margin-top:16px}
+th,td{border:1px solid #e5e7eb;padding:8px;text-align:left}th{background:#f1f5f9}
+.flash-success{background:#dcfce7;padding:8px;border-radius:8px;margin:8px 0}
+.flash-danger{background:#fee2e2;padding:8px;border-radius:8px;margin:8px 0}
+.flash-warning{background:#fef9c3;padding:8px;border-radius:8px;margin:8px 0}
+.flash-info{background:#e0f2fe;padding:8px;border-radius:8px;margin:8px 0}
